@@ -1,20 +1,560 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:id="@+id/mainroom"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:id="@+id/mainroom"
+    android:gravity="center"
+    android:orientation="horizontal"
+    tools:context=".MainActivity" >
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="40dp"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:gravity="center"
+        android:orientation="vertical" >
 
-    <ToggleButton
-        android:id="@+id/toggleButton1"
-        android:layout_width="wrap_content"
+        <ToggleButton
+            android:id="@+id/lamp1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:height="30dp"
+            android:onClick="ligthControlOnClick"
+            android:text="1"
+            android:width="30dp" />
+
+        <ToggleButton
+            android:id="@+id/lamp2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:height="30dp"
+            android:onClick="ligthControlOnClick"
+            android:text="2"
+            android:width="30dp" />
+
+        <ToggleButton
+            android:id="@+id/lamp3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:height="30dp"
+            android:onClick="ligthControlOnClick"
+            android:text="3"
+            android:width="30dp" />
+
+        <ToggleButton
+            android:id="@+id/lamp4"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:height="30dp"
+            android:onClick="ligthControlOnClick"
+            android:text="4"
+            android:width="30dp" />
+
+        <ToggleButton
+            android:id="@+id/lamp5"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:height="30dp"
+            android:onClick="ligthControlOnClick"
+            android:text="5"
+            android:width="30dp" />
+
+        <ToggleButton
+            android:id="@+id/lamp6"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:height="30dp"
+            android:onClick="ligthControlOnClick"
+            android:text="6"
+            android:width="30dp" />
+
+        <ToggleButton
+            android:id="@+id/lamp7"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:height="30dp"
+            android:onClick="ligthControlOnClick"
+            android:text="7"
+            android:width="30dp" />
+
+        <ToggleButton
+            android:id="@+id/lamp8"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:height="30dp"
+            android:onClick="ligthControlOnClick"
+            android:text="8"
+            android:width="30dp" />
+
+        <ToggleButton
+            android:id="@+id/lamp9"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:height="30dp"
+            android:onClick="ligthControlOnClick"
+            android:text="9"
+            android:width="30dp" />
+
+        <ToggleButton
+            android:id="@+id/lamp10"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:height="30dp"
+            android:onClick="ligthControlOnClick"
+            android:text="10"
+            android:width="30dp" />
+
+        <ToggleButton
+            android:id="@+id/lamp11"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:height="30dp"
+            android:onClick="ligthControlOnClick"
+            android:text="11"
+            android:width="30dp" />
+
+        <ToggleButton
+            android:id="@+id/lamp12"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:height="30dp"
+            android:onClick="ligthControlOnClick"
+            android:text="12"
+            android:width="30dp" />
+
+        <ToggleButton
+            android:id="@+id/lamp13"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:height="30dp"
+            android:onClick="ligthControlOnClick"
+            android:text="13"
+            android:width="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="40dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.40"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="top" >
+
+                    <ToggleButton
+                        android:id="@+id/lamp14"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="fill"
+                        android:layout_weight="1"
+                        android:height="30dp"
+                        android:onClick="ligthControlOnClick"
+                        android:text="14"
+                        android:textOff="@string/lampOff"
+                        android:textOn="@string/lampOn"
+                        android:width="30dp" />
+
+                    <ToggleButton
+                        android:id="@+id/lamp15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="1"
+                        android:height="30dp"
+                        android:onClick="ligthControlOnClick"
+                        android:text="15"
+                        android:textOff="@string/lampOff"
+                        android:textOn="@string/lampOn"
+                        android:width="30dp" />
+
+                    <ToggleButton
+                        android:id="@+id/lamp16"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="1"
+                        android:height="30dp"
+                        android:onClick="ligthControlOnClick"
+                        android:text="16"
+                        android:textOff="@string/lampOff"
+                        android:textOn="@string/lampOn"
+                        android:width="30dp" />
+
+                    <ToggleButton
+                        android:id="@+id/lamp17"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="1"
+                        android:height="30dp"
+                        android:onClick="ligthControlOnClick"
+                        android:text="17"
+                        android:textOff="@string/lampOff"
+                        android:textOn="@string/lampOn"
+                        android:width="30dp" />
+
+                    <ToggleButton
+                        android:id="@+id/lamp18"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="1"
+                        android:height="30dp"
+                        android:onClick="ligthControlOnClick"
+                        android:text="18"
+                        android:textOff="@string/lampOff"
+                        android:textOn="@string/lampOn"
+                        android:width="30dp" />
+
+                    <ToggleButton
+                        android:id="@+id/lamp19"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="1"
+                        android:height="30dp"
+                        android:onClick="ligthControlOnClick"
+                        android:text="19"
+                        android:textOff="@string/lampOff"
+                        android:textOn="@string/lampOn"
+                        android:width="30dp" />
+
+                </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="126dp"
+            android:layout_height="390dp"
+            android:minHeight="200dp"
+            android:orientation="vertical" >
+
+            <ToggleButton
+                android:id="@+id/lamp39"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:height="30dp"
+                android:onClick="ligthControlOnClick"
+                android:text="39"
+                android:width="30dp" />
+
+            <ToggleButton
+                android:id="@+id/lamp40"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:height="30dp"
+                android:onClick="ligthControlOnClick"
+                android:text="40"
+                android:width="30dp" />
+
+            <Button
+                android:id="@+id/all_on"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick="ligthControlOnClick"
+                android:text="ON" />
+
+            <Button
+                android:id="@+id/all_off"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:height="30dp"
+                android:onClick="ligthControlOnClick"
+                android:text="OFF"
+                android:width="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ToggleButton
+                android:id="@+id/lamp38"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:height="30dp"
+                android:onClick="ligthControlOnClick"
+                android:text="38"
+                android:textOff="@string/lampOff"
+                android:textOn="@string/lampOn"
+                android:width="30dp" />
+
+            <ToggleButton
+                android:id="@+id/lamp37"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:height="30dp"
+                android:onClick="ligthControlOnClick"
+                android:text="37"
+                android:textOff="@string/lampOff"
+                android:textOn="@string/lampOn"
+                android:width="30dp" />
+
+            <ToggleButton
+                android:id="@+id/lamp36"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:height="30dp"
+                android:onClick="ligthControlOnClick"
+                android:text="36"
+                android:textOff="@string/lampOff"
+                android:textOn="@string/lampOn"
+                android:width="30dp" />
+
+            <ToggleButton
+                android:id="@+id/lamp35"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:height="30dp"
+                android:onClick="ligthControlOnClick"
+                android:text="35"
+                android:textOff="@string/lampOff"
+                android:textOn="@string/lampOn"
+                android:width="30dp" />
+
+            <ToggleButton
+                android:id="@+id/lamp34"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:height="30dp"
+                android:onClick="ligthControlOnClick"
+                android:text="34"
+                android:textOff="@string/lampOff"
+                android:textOn="@string/lampOn"
+                android:width="30dp" />
+
+            <ToggleButton
+                android:id="@+id/lamp33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:height="30dp"
+                android:onClick="ligthControlOnClick"
+                android:text="33"
+                android:textOn="@string/lampOn"
+                android:width="30dp" />
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="40dp"
         android:layout_height="wrap_content"
-        android:text="ToggleButton" />
- 
+        android:gravity="right"
+        android:orientation="vertical" >
+
+        <ToggleButton
+            android:id="@+id/lamp32"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:height="30dp"
+            android:onClick="ligthControlOnClick"
+            android:text="32"
+            android:textOff="@string/lampOff"
+            android:textOn="@string/lampOn"
+            android:width="30dp" />
+
+        <ToggleButton
+            android:id="@+id/lamp31"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:height="30dp"
+            android:onClick="ligthControlOnClick"
+            android:text="31"
+            android:textOff="@string/lampOff"
+            android:textOn="@string/lampOn"
+            android:width="30dp" />
+
+        <ToggleButton
+            android:id="@+id/lamp30"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:height="30dp"
+            android:onClick="ligthControlOnClick"
+            android:text="30"
+            android:textOff="@string/lampOff"
+            android:textOn="@string/lampOn"
+            android:width="30dp" />
+
+        <ToggleButton
+            android:id="@+id/lamp29"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:height="30dp"
+            android:onClick="ligthControlOnClick"
+            android:text="29"
+            android:textOff="@string/lampOff"
+            android:textOn="@string/lampOn"
+            android:width="30dp" />
+
+        <ToggleButton
+            android:id="@+id/lamp28"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:height="30dp"
+            android:onClick="ligthControlOnClick"
+            android:text="28"
+            android:textOff="@string/lampOff"
+            android:textOn="@string/lampOn"
+            android:width="30dp" />
+
+        <ToggleButton
+            android:id="@+id/lamp27"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:height="30dp"
+            android:onClick="ligthControlOnClick"
+            android:text="27"
+            android:textOff="@string/lampOff"
+            android:textOn="@string/lampOn"
+            android:width="30dp" />
+
+        <ToggleButton
+            android:id="@+id/lamp26"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:height="30dp"
+            android:onClick="ligthControlOnClick"
+            android:text="26"
+            android:textOff="@string/lampOff"
+            android:textOn="@string/lampOn"
+            android:width="30dp" />
+
+        <ToggleButton
+            android:id="@+id/lamp25"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:height="30dp"
+            android:onClick="ligthControlOnClick"
+            android:text="25"
+            android:textOff="@string/lampOff"
+            android:textOn="@string/lampOn"
+            android:width="30dp" />
+
+        <ToggleButton
+            android:id="@+id/lamp24"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:height="30dp"
+            android:onClick="ligthControlOnClick"
+            android:text="24"
+            android:textOff="@string/lampOff"
+            android:textOn="@string/lampOn"
+            android:width="30dp" />
+
+        <ToggleButton
+            android:id="@+id/lamp23"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:height="30dp"
+            android:onClick="ligthControlOnClick"
+            android:text="23"
+            android:textOff="@string/lampOff"
+            android:textOn="@string/lampOn"
+            android:width="30dp" />
+
+        <ToggleButton
+            android:id="@+id/lamp22"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:height="30dp"
+            android:onClick="ligthControlOnClick"
+            android:text="22"
+            android:textOff="@string/lampOff"
+            android:textOn="@string/lampOn"
+            android:width="30dp" />
+
+        <ToggleButton
+            android:id="@+id/lamp21"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:height="30dp"
+            android:onClick="ligthControlOnClick"
+            android:text="21"
+            android:textOff="@string/lampOff"
+            android:textOn="@string/lampOn"
+            android:width="30dp" />
+
+        <ToggleButton
+            android:id="@+id/lamp20"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:height="30dp"
+            android:onClick="ligthControlOnClick"
+            android:text="20"
+            android:textOn="@string/lampOn"
+            android:width="30dp" />
+
+    </LinearLayout>
+
 </LinearLayout>
+    

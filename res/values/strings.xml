@@ -7,5 +7,9 @@
     <string name="title_section1">Section 1</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
+    <string name="tv_control_title">TV control</string>
+    <string name="fm_control">FM control</string>
+    <string name="lampOn">ON</string>
+    <string name="lampOff">OFF</string>
 
 </resources>
