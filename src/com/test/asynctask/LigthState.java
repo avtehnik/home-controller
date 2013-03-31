@@ -73,6 +73,9 @@ public class LigthState extends AsyncTask<Void, Void, boolean[]>{
     		this.mainActivity.lampsState[i] = state[i];
     		tb = (ToggleButton) this.view.findViewById(this.mainActivity.lamps[i]);
     		tb.setTag(i);
+    		tb.setTextOff(i+"");
+    		tb.setTextOn(i+"");
+//    		tb.setTextColor(0x00ff00);	
 			if(state[i]){
 				tb.setChecked(true);
 			}

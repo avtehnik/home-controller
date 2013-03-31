@@ -1,7 +1,6 @@
 package com.test.asynctask;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import android.os.Bundle;
@@ -10,6 +9,8 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.ToggleButton;
 
 
@@ -38,17 +39,37 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 	    
 	    this.mainroom = inflater.inflate(R.layout.mainroom, null);
   	    new LigthState(mainroom, this);
-	    
 	    pages.add(mainroom);
+	    
+	    View lan = inflater.inflate(R.layout.lan, null);
+	    pages.add(lan);
 	    
         SamplePagerAdapter pagerAdapter = new SamplePagerAdapter(pages);
         
         ViewPager viewPager = new ViewPager(this);
         viewPager.setAdapter(pagerAdapter);
-        viewPager.setCurrentItem(2);     
+        viewPager.setCurrentItem(1);     
         
         setContentView(viewPager);
+        
+	    WebView myWebView = (WebView) findViewById(R.id.lanwebview);
+	    if (myWebView == null) {
+	    	System.out.print("mWebView is null");
+	    }else{
+		    //myWebView.loadUrl("http://192.168.1.5/lan");
+		    myWebView.getSettings().setJavaScriptEnabled(true);
+		    myWebView.setWebViewClient(new HelloWebViewClient());
+		    myWebView.loadUrl("http://google.com");
+	    }
 	}
+
+	 private class HelloWebViewClient extends WebViewClient {
+	        @Override
+	        public boolean shouldOverrideUrlLoading(WebView view, String url) {
+	            view.loadUrl(url);
+	            return true;
+	        }
+	    }
 
 	@Override
 	public void onClick(View view) {
